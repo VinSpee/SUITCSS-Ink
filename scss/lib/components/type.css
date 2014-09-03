@@ -1,0 +1,115 @@
+:root {
+  /*We use these to control font styles*/
+  --InkType-base-font-color: #222222;
+  --InkType-base-font-family: Helvetica, Arial, sans-serif;
+  --InkType-base-font-weight: normal;
+  --InkType-base-line-height: 1.3;
+
+  --InkType-body-font-size: 14px;
+  --InkType-body-line-height: 19px;
+
+  /*We use these to control header font sizes*/
+  --InkType-h1-font-size: 40px;
+  --InkType-h2-font-size: 36px;
+  --InkType-h3-font-size: 32px;
+  --InkType-h4-font-size: 28px;
+  --InkType-h5-font-size: 24px;
+  --InkType-h6-font-size: 20px;
+
+  /*A general <small> styling*/
+  --InkType-small-font-size: 10px;
+
+  /*We use these to style lead paragraphs*/
+  --InkType-paragraph-lead-font-size: 18px;
+  --InkType-paragraph-lead-line-height: 21px;
+
+  /*We use these to style anchors*/
+  --InkType-anchor-text-decoration: none;
+  --InkType-anchor-font-color: #2ba6cb;
+  --InkType-anchor-font-color-visited: --var(InkType-anchor-font-color);
+  --InkType-anchor-font-color-hover: #2795b6;
+  --InkType-anchor-font-color-active: --var(InkType-anchor-font-color-hover);
+
+  --InkType-header-anchor-font-color: --var(InkType-anchor-font-color);
+  --InkType-header-anchor-font-color-visited: --var(InkType-header-anchor-font-color);
+  --InkType-header-anchor-font-color-active: --var(InkType-header-anchor-font-color);
+}
+
+body, table.body, h1, h2, h3, h4, h5, h6, p, td {
+  color: --var(InkType-base-font-color);
+  font-family: --var(InkType-base-font-family);
+  font-weight: --var(InkType-base-font-weight);
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: --var(InkType-base-line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  word-break: normal;
+}
+
+h1 {font-size: --var(InkType-h1-font-size);}
+h2 {font-size: --var(InkType-h2-font-size);}
+h3 {font-size: --var(InkType-h3-font-size);}
+h4 {font-size: --var(InkType-h4-font-size);}
+h5 {font-size: --var(InkType-h5-font-size);}
+h6 {font-size: --var(InkType-h6-font-size);}
+body, table.body, p, td {font-size: --var(InkType-body-font-size;line-height:--var(InkType-body-line-height));}
+
+p.lead, p.lede, p.leed {
+  font-size: --var(InkType-paragraph-lead-font-size);
+  line-height:--var(InkType-paragraph-lead-line-height);
+}
+
+p {
+  margin-bottom: --var(InkType-paragraph-margin-bottom);
+}
+
+small {
+  font-size: --var(InkType-small-font-size);
+}
+
+a {
+  color: --var(InkType-anchor-font-color);
+  text-decoration: --var(InkType-anchor-text-decoration);
+}
+
+a:hover {
+  color: --var(InkType-anchor-font-color-hover) !important;
+}
+
+a:active {
+  color: --var(InkType-anchor-font-color-active) !important;
+}
+
+a:visited {
+  color: --var(InkType-anchor-font-color-visited) !important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: --var(InkType-header-anchor-font-color);
+}
+
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active {
+  color: --var(InkType-header-anchor-font-color-active) !important;
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited,
+h6 a:visited {
+  color: --var(InkType-header-anchor-font-color-visited) !important;
+}

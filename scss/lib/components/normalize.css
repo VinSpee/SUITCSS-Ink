@@ -1,0 +1,97 @@
+-i used with no filenames on the command line, reading from STDIN.
+// Ink by ZURB
+// zurb.com/ink/
+// Licensed under MIT Open Source
+
+:root {
+  --InkNormalize-hr-color: #d9d9d9;
+  --InkNormalize-hr-height: 1px;
+}
+
+#outlook a {
+  padding:0;
+}
+
+body {
+  width:100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust:100%;
+  margin:0;
+  padding:0;
+}
+
+  /* .ExternalClass applies to Outlook.com (the artist formerly known as Hotmail)  */
+
+.ExternalClass {
+  width:100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+
+
+
+#backgroundTable {
+  margin:0;
+  padding:0;
+  width:100% !important;
+  line-height: 100% !important;
+}
+
+img {
+  outline:none;
+  text-decoration:none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  clear: both;
+  display: block;
+}
+
+center {
+  width: 100%;
+  min-width: --var(InkNormalize-container-width);
+}
+
+a img {
+  border: none;
+}
+
+p {
+  margin: 0 0 0 --var(InkNormalize-paragraph-margin-bottom);
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important;
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+hr {
+  color: --var(InkNormalize-hr-color);
+  background-color: --var(InkNormalize-hr-color);
+  height: --var(InkNormalize-hr-height);
+  border: none;
+}
