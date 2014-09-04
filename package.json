@@ -1,6 +1,6 @@
 {
   "name": "SUITCSS-Ink",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A port of Zurb's Ink email framework to SUITCSS's principals",
   "style": "index.css",
   "files": [
