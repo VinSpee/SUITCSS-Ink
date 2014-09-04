@@ -1,0 +1,134 @@
+/**********************************************
+* Ink v1.0.5 - Copyright 2013 ZURB Inc        *
+**********************************************/
+
+/* Make sure the charset is set appropriately */
+@charset "UTF-8";
+
+:root {
+
+  /**************************
+   * MEDIA QUERIES
+   **************************/
+
+  --Ink-smallContainerWidth: 95%;
+  @custom-media --narrow-viewport screen and (max-width: 600px);
+
+  /**************************
+   * NORMALIZE
+   **************************/
+
+  --InkNormalize-hr-color: #d9d9d9;
+  --InkNormalize-hr-height: 1px;
+
+  /**************************
+   * TYPE
+   **************************/
+
+  /*We use these to control font styles*/
+  --InkType-base-font-color: #222222;
+  --InkType-base-font-family: Helvetica, Arial, sans-serif;
+  --InkType-base-font-weight: normal;
+  --InkType-base-line-height: 1.3;
+
+  --InkType-body-font-size: 14px;
+  --InkType-body-line-height: 19px;
+
+  /*We use these to control header font sizes*/
+  --InkType-h1-font-size: 40px;
+  --InkType-h2-font-size: 36px;
+  --InkType-h3-font-size: 32px;
+  --InkType-h4-font-size: 28px;
+  --InkType-h5-font-size: 24px;
+  --InkType-h6-font-size: 20px;
+
+  /*A general <small> styling*/
+  --InkType-small-font-size: 10px;
+
+  /*We use these to style lead paragraphs*/
+  --InkType-paragraph-lead-font-size: 18px;
+  --InkType-paragraph-lead-line-height: 21px;
+
+  /*We use these to style anchors*/
+  --InkType-anchor-text-decoration: none;
+  --InkType-anchor-font-color: #2ba6cb;
+  --InkType-anchor-font-color-visited: --var(InkType-anchor-font-color);
+  --InkType-anchor-font-color-hover: #2795b6;
+  --InkType-anchor-font-color-active: --var(InkType-anchor-font-color-hover);
+
+  --InkType-header-anchor-font-color: --var(InkType-anchor-font-color);
+  --InkType-header-anchor-font-color-visited: --var(InkType-header-anchor-font-color);
+  --InkType-header-anchor-font-color-active: --var(InkType-header-anchor-font-color);
+
+  /**************************
+   * BUTTONS
+   **************************/
+
+  /*We use these to build padding for buttons.*/
+  --InkButton-dft: 8px 0;
+  --InkButton-tny: 5px 0 4px;
+  --InkButton-sml: 8px 0 7px;
+  --InkButton-med: 12px 0 10px;
+  --InkButton-lrg: 21px 0 18px;
+
+  /*We use these to control button text styles.*/
+  --InkButton-font-family: Sans-serif;
+  --InkButton-font-color: #ffffff;
+  --InkButton-font-color-alt: #555555;
+  --InkButton-font-tny: 12px;
+  --InkButton-font-sml: 16px;
+  --InkButton-font-med: 20px;
+  --InkButton-font-lrg: 24px;
+
+  /*We use these to control button border styles.*/
+  --InkButton-border-width: 1px;
+  --InkButton-border-style: solid;
+  --InkButton-bg: #2ba6cb;
+  --InkButton-border-color: #2284a1;
+
+  /*We use these as default colors throughout*/
+  --InkButton-primary-color: #2795b6;
+  --InkButton-secondary-color: #e9e9e9;
+  --InkButton-alert-color: #c60f13;
+  --InkButton-success-color: #5da423;
+  --InkButton-secondary-border-color: #d0d0d0;
+  --InkButton-alert-border-color: #457a1a;
+  --InkButton-success-border-color: #970b0e;
+
+  /*We use this to set the default radius used throughout the core.*/
+  --InkButton-radius: .1rem;
+  --InkButton-round: 100%;
+
+  /**************************
+   * PANEL
+   **************************/
+
+  --InkPanel-bg: #f2f2f2;
+  --InkPanel-border-style: solid;
+  --InkPanel-border-color: #d9d9d9;
+  --InkPanel-border-size: 1px;
+
+  /**************************
+   * GRID
+   **************************/
+
+  --InkGrid-padding: 10px;
+  --InkGrid-width: 580px;
+
+  /**************************
+   * BLOCK GRID
+   **************************/
+
+  --InkBlockGrid-gutter-width: 10px;
+}
+
+/* Behold, here are all the ink components. */
+@import "lib/outlook-first.css";
+@import "lib/normalize.css";
+@import "lib/grid.css";
+@import "lib/block-grid.css";
+@import "lib/alignment.css";
+@import "lib/type.css";
+@import "lib/panel.css";
+@import "lib/button.css";
+@import "lib/media-query.css";
