@@ -1,0 +1,29 @@
+{
+  "name": "SUITCSS-Ink",
+  "version": "0.1.0",
+  "description": "A port of Zurb's Ink email framework to SUITCSS's principals",
+  "style": "index.css",
+  "files": [
+    "index.css",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VinSpee/sassy-ink.git"
+  },
+  "keywords": [
+    "suit",
+    "suitcss",
+    "ink",
+    "email"
+  ],
+  "author": "Vince Speelman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinSpee/sassy-ink/issues"
+  },
+  "homepage": "https://github.com/VinSpee/sassy-ink"
+}
