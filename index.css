@@ -5,6 +5,7 @@
 /* Make sure the charset is set appropriately */
 @charset "UTF-8";
 
+@custom-media --narrow-viewport screen and (max-width: 600px);
 :root {
 
   /**************************
@@ -12,12 +13,13 @@
    **************************/
 
   --Ink-smallContainerWidth: 95%;
-  @custom-media --narrow-viewport screen and (max-width: 600px);
 
   /**************************
    * NORMALIZE
    **************************/
 
+  --InkNormalize-container-width: 600px;
+  --InkNormalize-paragraph-margin-bottom: 10px;
   --InkNormalize-hr-color: #d9d9d9;
   --InkNormalize-hr-height: 1px;
 
@@ -48,6 +50,7 @@
   /*We use these to style lead paragraphs*/
   --InkType-paragraph-lead-font-size: 18px;
   --InkType-paragraph-lead-line-height: 21px;
+  --InkType-paragraph-margin-bottom: var(--InkNormalize-paragraph-margin-bottom);
 
   /*We use these to style anchors*/
   --InkType-anchor-text-decoration: none;
@@ -107,6 +110,7 @@
   --InkPanel-border-style: solid;
   --InkPanel-border-color: #d9d9d9;
   --InkPanel-border-size: 1px;
+  --InkPanel-padding: 10px;
 
   /**************************
    * GRID
@@ -123,12 +127,12 @@
 }
 
 /* Behold, here are all the ink components. */
-@import "lib/outlook-first.css";
-@import "lib/normalize.css";
-@import "lib/grid.css";
-@import "lib/block-grid.css";
-@import "lib/alignment.css";
-@import "lib/type.css";
-@import "lib/panel.css";
-@import "lib/button.css";
-@import "lib/media-query.css";
+@import "./lib/outlook-first.css";
+@import "./lib/normalize.css";
+@import "./lib/grid.css";
+@import "./lib/block-grid.css";
+@import "./lib/alignment.css";
+@import "./lib/type.css";
+@import "./lib/panel.css";
+@import "./lib/button.css";
+@import "./lib/media-query.css";

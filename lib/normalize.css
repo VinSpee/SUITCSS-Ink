@@ -1,9 +1,6 @@
--i used with no filenames on the command line, reading from STDIN.
-// Ink by ZURB
-// zurb.com/ink/
-// Licensed under MIT Open Source
-
 :root {
+  --InkNormalize-container-width: 600px;
+  --InkNormalize-paragraph-margin-bottom: 10px;
   --InkNormalize-hr-color: #d9d9d9;
   --InkNormalize-hr-height: 1px;
 }
@@ -59,7 +56,7 @@ img {
 
 center {
   width: 100%;
-  min-width: --var(InkNormalize-container-width);
+  min-width: var(--InkNormalize-container-width);
 }
 
 a img {
@@ -67,7 +64,7 @@ a img {
 }
 
 p {
-  margin: 0 0 0 --var(InkNormalize-paragraph-margin-bottom);
+  margin: 0 0 0 var(--InkNormalize-paragraph-margin-bottom);
 }
 
 table {
@@ -90,8 +87,8 @@ table, tr, td {
 }
 
 hr {
-  color: --var(InkNormalize-hr-color);
-  background-color: --var(InkNormalize-hr-color);
-  height: --var(InkNormalize-hr-height);
+  color: var(--InkNormalize-hr-color);
+  background-color: var(--InkNormalize-hr-color);
+  height: var(--InkNormalize-hr-height);
   border: none;
 }

@@ -184,9 +184,9 @@ table.alert:hover td {
 }
 
 table.radius td {
-  border-radius: var(--InkButton-global-radius);
+  border-radius: var(--InkButton-radius);
 }
 
 table.round td {
-  border-radius: var(--InkButton-global-rounded);
+  border-radius: var(--InkButton-round);
 }

@@ -26,65 +26,65 @@
   /*We use these to style anchors*/
   --InkType-anchor-text-decoration: none;
   --InkType-anchor-font-color: #2ba6cb;
-  --InkType-anchor-font-color-visited: --var(InkType-anchor-font-color);
+  --InkType-anchor-font-color-visited: var(--InkType-anchor-font-color);
   --InkType-anchor-font-color-hover: #2795b6;
-  --InkType-anchor-font-color-active: --var(InkType-anchor-font-color-hover);
+  --InkType-anchor-font-color-active: var(--InkType-anchor-font-color-hover);
 
-  --InkType-header-anchor-font-color: --var(InkType-anchor-font-color);
-  --InkType-header-anchor-font-color-visited: --var(InkType-header-anchor-font-color);
-  --InkType-header-anchor-font-color-active: --var(InkType-header-anchor-font-color);
+  --InkType-header-anchor-font-color: var(--InkType-anchor-font-color);
+  --InkType-header-anchor-font-color-visited: var(--InkType-header-anchor-font-color);
+  --InkType-header-anchor-font-color-active: var(--InkType-header-anchor-font-color);
 }
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td {
-  color: --var(InkType-base-font-color);
-  font-family: --var(InkType-base-font-family);
-  font-weight: --var(InkType-base-font-weight);
+  color: var(--InkType-base-font-color);
+  font-family: var(--InkType-base-font-family);
+  font-weight: var(--InkType-base-font-weight);
   padding: 0;
   margin: 0;
   text-align: left;
-  line-height: --var(InkType-base-line-height);
+  line-height: var(--InkType-base-line-height);
 }
 
 h1, h2, h3, h4, h5, h6 {
   word-break: normal;
 }
 
-h1 {font-size: --var(InkType-h1-font-size);}
-h2 {font-size: --var(InkType-h2-font-size);}
-h3 {font-size: --var(InkType-h3-font-size);}
-h4 {font-size: --var(InkType-h4-font-size);}
-h5 {font-size: --var(InkType-h5-font-size);}
-h6 {font-size: --var(InkType-h6-font-size);}
-body, table.body, p, td {font-size: --var(InkType-body-font-size;line-height:--var(InkType-body-line-height));}
+h1 {font-size: var(--InkType-h1-font-size);}
+h2 {font-size: var(--InkType-h2-font-size);}
+h3 {font-size: var(--InkType-h3-font-size);}
+h4 {font-size: var(--InkType-h4-font-size);}
+h5 {font-size: var(--InkType-h5-font-size);}
+h6 {font-size: var(--InkType-h6-font-size);}
+body, table.body, p, td {font-size: var(--InkType-body-font-size;line-height:var(--InkType-body-line-height));}
 
 p.lead, p.lede, p.leed {
-  font-size: --var(InkType-paragraph-lead-font-size);
-  line-height:--var(InkType-paragraph-lead-line-height);
+  font-size: var(--InkType-paragraph-lead-font-size);
+  line-height:var(--InkType-paragraph-lead-line-height);
 }
 
 p {
-  margin-bottom: --var(InkType-paragraph-margin-bottom);
+  margin-bottom: var(--InkType-paragraph-margin-bottom);
 }
 
 small {
-  font-size: --var(InkType-small-font-size);
+  font-size: var(--InkType-small-font-size);
 }
 
 a {
-  color: --var(InkType-anchor-font-color);
-  text-decoration: --var(InkType-anchor-text-decoration);
+  color: var(--InkType-anchor-font-color);
+  text-decoration: var(--InkType-anchor-text-decoration);
 }
 
 a:hover {
-  color: --var(InkType-anchor-font-color-hover) !important;
+  color: var(--InkType-anchor-font-color-hover) !important;
 }
 
 a:active {
-  color: --var(InkType-anchor-font-color-active) !important;
+  color: var(--InkType-anchor-font-color-active) !important;
 }
 
 a:visited {
-  color: --var(InkType-anchor-font-color-visited) !important;
+  color: var(--InkType-anchor-font-color-visited) !important;
 }
 
 h1 a,
@@ -93,7 +93,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: --var(InkType-header-anchor-font-color);
+  color: var(--InkType-header-anchor-font-color);
 }
 
 h1 a:active,
@@ -102,7 +102,7 @@ h3 a:active,
 h4 a:active,
 h5 a:active,
 h6 a:active {
-  color: --var(InkType-header-anchor-font-color-active) !important;
+  color: var(--InkType-header-anchor-font-color-active) !important;
 }
 
 h1 a:visited,
@@ -111,5 +111,5 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: --var(InkType-header-anchor-font-color-visited) !important;
+  color: var(--InkType-header-anchor-font-color-visited) !important;
 }

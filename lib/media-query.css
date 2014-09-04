@@ -1,6 +1,7 @@
+@custom-media --narrow-viewport screen and (max-width: 600px);
+
 :root {
   --Ink-smallContainerWidth: 95%;
-  @custom-media --narrow-viewport screen and (max-width: 600px);
 }
 
 
