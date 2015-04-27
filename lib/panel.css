@@ -7,7 +7,7 @@
 }
 
 .panel {
-  background: $panel-bg;
+  background: var(--InkPanel-bg);
   border: var(--InkPanel-border-size) var(--InkPanel-border-style) var(--InkPanel-border-color);
   padding: var(--InkPanel-padding) !important;
 }
